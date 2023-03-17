@@ -6,22 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Llegando los monos</title> 
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/0bd31c9dc1.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/estilos.css">
 </head>
 <body>
-    <header class="Header"> 
-        <div>
-            <nav>
-                <ul class="listaNavegacionHeader">
-                    <li class="linkNavHeader"><a class="a" href="../index.html"><img class="logo" src="../assets/img/logosumo-largo_Mesa de trabajo 1.png"></a></li>
-                    <li class="linkNavHeader"><a class="a" href="./discos.html">discos</a></li>
-                    <li class="linkNavHeader"><a class="a" href="./letras.html">letras</a></li>
-                    <li class="linkNavHeader"><a class="aSeleccionado" href="#">fotos</a></li>
-                    <li class="linkNavHeader"><a class="a" href="./videos.html">videos</a></li>
-                    <li class="linkNavHeader"><a class="a" href="./contacto.html">contacto</a></li>
-                </ul>
-            </nav>
-        </div>
+    <header class="Header conteiner-fluid"> 
+        <!-- para las navbar utilicé uno de los formatos de bootstrap pero modifique algunas cosas: agregué mi logo, cambié la disposicioón de los links y los colores. NO SUPE COMO CAMBIAR EL ICONO DEL MENU HAMBURGUESA DE BOOTSTRAP QUE NO SE VE CON FONDO NEGRO de la navbar-->
+        <nav class="navbar navbar-expand-lg navbar-bgcolor">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html"><img class="logo" src="../assets/img/sumo_logo-106px.png"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link nav-link-margin" aria-current="page" href="./discos.html">DISCOS</a>
+                    <a class="nav-link nav-link-margin" href="./letras.html">LETRAS</a>
+                    <a class="nav-link2 nav-link-margin" href="#">FOTOS</a>
+                    <a class="nav-link nav-link-margin" href="./videos.html">VIDEOS</a>
+                    <a class="nav-link nav-link-margin" href="./contacto.html">CONTACTO</a>
+                </div>
+                </div>
+            </div>
+        </nav>
     </header>
 
     <main>
@@ -58,13 +66,17 @@
         
     </main>
     
-    <footer class="colorFondoFooter tamañoFooter">
-        <div class="divFooter">
-            <a class="linkFooter" href="https://open.spotify.com/artist/10AzTrYMPVVmpKoBP5bX9W?si=L51oy-vmQ6WoRWnyUpYfBg" target="_blank">spotify</a>
+    <footer class="footer">
+        <div class="contenedorImagenFinal">
+            <img class="imagenFinal" src="../assets/img/logo footer.png" alt="">
         </div>
-        <div class="textoFooter">
+        <div class="divFooter">
+            <a class="linkFooter" href="https://open.spotify.com/artist/10AzTrYMPVVmpKoBP5bX9W?si=L51oy-vmQ6WoRWnyUpYfBg" target="_blank"><i class="fa-brands fa-spotify fa-2x "></i></i></i></a>
+        </div>
+        <div class="divTextoFooter">
             <p>todos los derechos reservados</p>
         </div>
     </footer>
+    <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

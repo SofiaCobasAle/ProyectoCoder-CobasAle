@@ -6,139 +6,202 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Llegando los monos</title>
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon"> 
+    <script src="https://kit.fontawesome.com/0bd31c9dc1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/0bd31c9dc1.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/estilos.css">
 </head>
 
-<body>
-    <header class="Header"> 
-        <div>
-            <nav>
-                <ul class="listaNavegacionHeader">
-                    <li class="linkNavHeader"><a class="a" href="../index.html"><img class="logo" src="../assets/img/logosumo-largo_Mesa de trabajo 1.png"></a></li>
-                    <li class="linkNavHeader"><a class="aSeleccionado" href="#">discos</a></li>
-                    <li class="linkNavHeader"><a class="a" href="./letras.html">letras</a></li>
-                    <li class="linkNavHeader"><a class="a" href="./fotos.html">fotos</a></li>
-                    <li class="linkNavHeader"><a class="a" href="./videos.html">videos</a></li>
-                    <li class="linkNavHeader"><a class="a" href="./contacto.html">contacto</a></li>
-                </ul>
-            </nav>
-        </div>
+<body class="colorBody">
+    <header class="Header conteiner-fluid"> 
+        <!-- para las navbar utilicé uno de los formatos de bootstrap pero modifique algunas cosas: agregué mi logo, cambié la disposicioón de los links y los colores. NO SUPE COMO CAMBIAR EL ICONO DEL MENU HAMBURGUESA DE BOOTSTRAP QUE NO SE VE CON FONDO NEGRO de la navbar-->
+        <nav class="navbar navbar-expand-lg navbar-bgcolor">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html"><img class="logo" src="../assets/img/sumo_logo-106px.png"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link2 nav-link-margin" aria-current="page" href="#">DISCOS</a>
+                    <a class="nav-link nav-link-margin" href="./letras.html">LETRAS</a>
+                    <a class="nav-link nav-link-margin" href="./fotos.html">FOTOS</a>
+                    <a class="nav-link nav-link-margin" href="./videos.html">VIDEOS</a>
+                    <a class="nav-link nav-link-margin" href="./contacto.html">CONTACTO</a>
+                </div>
+                </div>
+            </div>
+        </nav>
     </header>
 
-    <main>
-        <section>
-            <h1>DISCOGRAFIA</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio dolorum fuga quo voluptate, fugiat in dignissimos accusamus aperiam reprehenderit corrupti nam mollitia id! Quibusdam rem enim sapiente necessitatibus, accusamus obcaecati.</p>
-        </section>
-        <br>
-        <section>
-            <div>
-                <img src="../assets/img/TAPA.Corpiñosenlamadrugada.jpg" width="500px">
-                <h2>CORPIÑOS EN LA MADRUGADA</h2>
-                <h3>1983</h3>
-                <br>
-                <ol>                
-                    <li><a>01. Night and day</a></li>
-                    <li><a>02. Mejor no hablar (de ciertas cosas)</a></li>
-                    <li><a>03. Banderitas y globos</a></li>
-                    <li><a>04. Teléfonos / White Trash</a></li>                
-                    <li><a>05. Una Noche en New York City (La Rubia Tarada)</a></li>
-                    <li><a>06. Divididos por la felicidad</a></li>
-                    <li><a>07. Quiero dinero</a></li>
-                    <li><a>08. Fuck you</a></li>
-                    <li><a>09. Debede</a></li>
-                    <li><a>10. Breaking away</a></li>
-                    <li><a>11. NextWeek</a></li>
-                    <li><a>12. Warm mist</a></li>
-                    <li><a>13. Solo piano</a></li>
-                </ol>
-            </div>
-            <div>
-                <img src="../assets/img/sumo-divididos-por-la-felicidad-Cover-Art.png" width="500px">
-                <h2>DIVIDIDOS POR LA FELICIDAD</h2>
-                <h3>año</h3>
-                <br>
-                <ol>
-                    <li><a>01. La rubia tarada</a></li>
-                    <li><a>02. Mula plateada </a></li>
-                    <li><a>03. No acabes</a></li>
-                    <li><a>04. Regtest</a></li>
-                    <li><a>05. El reggae de paz y amor</a></li>
-                    <li><a>06. Debede</a></li>
-                    <li><a>07. Mejor no hablar (de ciertas cosas)</a></li>
-                    <li><a>08. Divididos por la felicidad</a></li>
-                    <li><a>09. No duermas más</a></li>
-                    <li><a>10. Kaya</a></li>
-                </ol>
-            </div>
-            <div>
-                <img src="../assets/img/tapa.afterchabon.jpg" width="500px">
-                <h2>AFTER CHABON</h2>
-                <h3>1987</h3>
-                <br>
-                <ol>
-                    <li><a>01. CRUA CHAN</a></li>
-                    <li><a>02. NO TAN DISTINTOS</a></li>
-                    <li><a>03. BANDERITAS Y GLOBOS</a></li>
-                    <li><a>04. MAÑANA EN EL ABASTO</a></li>
-                    <li><a>05. HOLA FRANK</a></li>
-                    <li><a>06. OJOS DE TERCIOPELO</a></li>
-                    <li><a>07. LO QUIERO YA</a></li>
-                    <li><a>08. LA GOTA EN EL OJO</a></li>
-                    <li><a>09. EL CIEGUITO VOLADOR</a></li>
-                    <li><a>10. NO TE PONGAS AZUL</a></li>
-                    <li><a>11. NOCHE DE PAZ</a></li>
-                    <li><a>12. PERCUSSION BABY</a></li>
-                </ol>
-            </div>
-            <div>
-                <img src="../assets/img/tapa.llegandolosmonos.jpg" width="500px">
-                <h2>LLEGANDO LOS MONOS</h2>
-                <h3>año</h3>
-                <br>
-                <ol>
-                    <li><a></a></li>
-                    <li><a></a></li>
-                    <li><a></a></li>
-                    <li><a></a></li>
-                    <li><a></a></li>
-                    <li><a></a></li>
-                    <li><a></a></li>
-                    <li><a></a></li>
-                    <li><a></a></li>
-                    <li><a></a></li>
-                </ol>
-            </div>
-            <div>
-                <img src="../assets/img/tapa.fiebre.jpg" width="500px">
-                <h2>FIEBRE</h2>
-                <h3>1989</h3>
-                <br>
-                <ol>
-                    <li><a>01. DÉJAME EN PAZ</a></li>
-                    <li><a>02. CALLATE MARK</a></li>
-                    <li><a>03. CRUA CHAN</a></li>
-                    <li><a>04. AL REPALAZO</a></li>
-                    <li><a>05. FIEBRE</a></li>
-                    <li><a>06. BRILLA TU LUZ PARA MÍ</a></li>
-                    <li><a>07. AQUI VIENEN LOS BLUE JEANS</a></li>
-                    <li><a>08. NO MAS NADA</a></li>
-                    <li><a>09. CUERDAS, GARGANTAS Y CABLES</a></li>
-                    <li><a>10. PININI REGGAE</a></li>
-                </ol>
-            </div>
-            
+    <main class="container mainDiscos">
+        <section class="row divDiscosH1">
+            <h1 class="h1">DISCOS</h1>
+            <br> 
+            <p class="parrafos">En 1983 Sumo lanzó su primer demo titulado <i class="italica">Corpiños en la madrugada</i> (del que originalmente solo se hicieron 300 copias) y en 1985 el considerado su disco debut <i class="italica">Divididos por lafelicidad</i>. Le siguieron <i class="italica">Llegando lo monos</i> (1986) y <i class="italica">After chabón</i> (1987), su tercer y último álbum. <br> 
+            En 1989 se editó el póstumo <i class="italica">Fiebre</i>, un compilado que contiene grabaciones inéditas de la banda y temas tocados en vivo.
+            </p>
         </section>
 
+        <div class="row altoDivPadreDisco">
+            <div class="col-sm-12 col-md-12 col-lg-6 divDiscoTapa"> <!--cada tapa es un link que conduce a spotify-->  
+                <a target="_blank" class="tapaDisco" href="https://open.spotify.com/album/0wooZ6DUEtSf0bJY7SXYen">
+                <img class="tapaDisco" src="../assets/img/tapa-corpiños-01.jpg" alt="foto de la tapa del disco Corpiños en la Madrugada, la tapa es toda blanca con el título en negro en la parte inferior.">
+                </a>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-6 divDiscoTextosPadre">
+                <div class="divDiscoTitulo">
+                    <h4 class="h4">CORPIÑOS EN LA MADRUGADA</h4>
+                    <h5 class="h5">1983</h5>
+                </div>
+                <div class="divDiscoLista parrafos2"> <!--falta linkear cada tema con su letra-->          
+                    <ol>
+                        <li><a class="a">01. NIGHT AND DAY</a></li>
+                        <li><a class="a">02. MEJOR NO HABLAR (DE CIERTAS COSAS)</a></li>
+                        <li><a class="a">03. BANDERITAS Y GLOBOS</a></li>
+                        <li><a class="a">04. TELÉFONOS / WHITE TRASH</a></li>
+                        <li><a class="a">05. LA RUBIA TARADA</a></li>
+                        <li><a class="a">06. DIVIDIDOS POR LA FELICIDAD</a></li>
+                        <li><a class="a">07. QUIERO DINERO</a></li>
+                        <li><a class="a">08. FUCK YOU</a></li>
+                        <li><a class="a">09. DISCO BABY DISCO</a></li>
+                        <li><a class="a">10. DEBEDE</a></li>
+                        <li><a class="a">11. NEXTWEEK</a></li>
+                        <li><a class="a">12. WARM MIST</a></li>
+                        <li><a class="a">13. SOLO PIANO</a></li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <div class="row altoDivPadreDisco">
+            <div class="col-sm-12 col-md-12 col-lg-6 divDiscoTapa">
+                <a target="_blank" class="tapaDisco" href="https://open.spotify.com/album/0iMPnRq7PL82Zrah0gTQBR">
+                <img class="tapaDisco" src="../assets/img/sumo-divididos-por-la-felicidad-Cover-Art.png" alt="foto de la tapa del disco..">
+                </a>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-6 divDiscoTextosPadre">
+                <div class="divDiscoTitulo">
+                    <h4 class="h4">DIVIDIDOS POR LA FELICIDAD</h4>
+                    <h5 class="h5">1985</h5>
+                </div>
+                <div class="divDiscoLista parrafos2">               
+                    <ol>
+                        <li><a class="a">01. LA RUBIA TARADA</a></li>
+                        <li><a class="a">02. MULA PLATEADA</a></li>
+                        <li><a class="a">03. NO ACABES</a></li>
+                        <li><a class="a">04. REGTEST</a></li>
+                        <li><a class="a">05. EL REGGAE DE PAZ Y AMOR</a></li>
+                        <li><a class="a">06. DEBEDE</a></li>
+                        <li><a class="a">07. MEJOR NO HABLAR DE CIERTAS COSAS</a></li>
+                        <li><a class="a">08. DIVIDIDOS POR LA FELICIDAD</a></li>
+                        <li><a class="a">09. NO DUERMAS MÁS</a></li>
+                        <li><a class="a">10. KAYA</a></li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <div class="row altoDivPadreDisco">
+            <div class="col-sm-12 col-md-12 col-lg-6 divDiscoTapa">
+                <a target="_blank" class="tapaDisco" href="https://open.spotify.com/album/2kn0EF90FuahMHtPpwVsX4" >
+                <img class="tapaDisco" src="../assets/img/tapa.llegandolosmonos.jpg" alt="foto de la tapa del disco ..">
+                </a>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-6 divDiscoTextosPadre">
+                <div class="divDiscoTitulo">
+                    <h4 class="h4">LLEGANDO LOS MONOS</h4>
+                    <h5 class="h5">1986</h5>
+                </div>
+                <div class="divDiscoLista parrafos2">               
+                    <ol>
+                        <li><a class="a">01. LLEGANDO LOS MONOS</a></li>
+                        <li><a class="a">02. EL OJO BLINDADO</a></li>
+                        <li><a class="a">03. ESTALLANDO DESDE EL OCEANO</a></li>
+                        <li><a class="a">04. TV CALIENTE</a></li>
+                        <li><a class="a">05. NEXT WEEK</a></li>
+                        <li><a class="a">06. CINCO MAGNIFICOS</a></li>
+                        <li><a class="a">07. ROLLANDO</a></li>
+                        <li><a class="a">08. LOS VIEJOS VINAGRES</a></li>
+                        <li><a class="a">09. NO GOOD</a></li>
+                        <li><a class="a">10. HEROINA</a></li>
+                        <li><a class="a">11. QUE ME PISEN</a></li>
+                        <li><a class="a">12.  LLEGANDO LOS MONOS (REPRISE)</a></li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <div class="row altoDivPadreDisco">
+            <div class="col-sm-12 col-md-12 col-lg-6 divDiscoTapa">
+                <a target="_blank" class="tapaDisco" href="https://open.spotify.com/album/721cIV4PIWZSK5nZaYPvFy">
+                <img class="tapaDisco" src="../assets/img/tapa.afterchabon.jpg" alt="foto de la tapa del disco..">
+                </a>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-6 divDiscoTextosPadre">
+                <div class="divDiscoTitulo">
+                    <h4 class="h4">AFTER CHABON</h4>
+                    <h5 class="h5">1987</h5>
+                </div>
+                <div class="divDiscoLista parrafos2">               
+                    <ol>
+                        <li><a class="a">01. CRUA CHAN</a></li>
+                        <li><a class="a">02. NO TAN DISTINTOS</a></li>
+                        <li><a class="a">03. BANDERITAS Y GLOBOS</a></li>
+                        <li><a class="a">04. MAÑANA EN EL ABASTO</a></li>
+                        <li><a class="a">05. HOLA FRANK</a></li>
+                        <li><a class="a">06. OJOS DE TERCIOPELO</a></li>
+                        <li><a class="a">07. LO QUIERO YA</a></li>
+                        <li><a class="a">08. LA GOTA EN EL OJO</a></li>
+                        <li><a class="a">09. EL CIEGUITO VOLADOR</a></li>
+                        <li><a class="a">10. NO TE PONGAS AZUL</a></li>
+                        <li><a class="a">11. NOCHE DE PAZ</a></li>
+                        <li><a class="a">12. PERCUSSION BABY</a></li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <div class="row altoDivPadreDisco">
+            <div class="col-sm-12 col-md-12 col-lg-6 divDiscoTapa">
+                <a target="_blank"class="tapaDisco" href="https://open.spotify.com/album/5LpuDtFRVdmO8g1E5OczMU">
+                <img class="tapaDisco" src="../assets/img/tapa.fiebre.jpg" alt="foto de la tapa del disco..">
+                </a>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-6 divDiscoTextosPadre">
+                <div class="divDiscoTitulo">
+                    <h4 class="h4">FIEBRE</h4>
+                    <h5 class="h5">1989</h5>
+                </div>
+                <div class="divDiscoLista parrafos2">               
+                    <ol>
+                        <li><a class="a">01. DÉJAME EN PAZ</a></li>
+                        <li><a class="a">02. CALLATE MARK</a></li>
+                        <li><a class="a">03. CRUA CHAN</a></li>
+                        <li><a class="a">04. AL REPALAZO</a></li>
+                        <li><a class="a">05. FIEBRE</a></li>
+                        <li><a class="a">06. BRILLA TU LUZ PARA MÍ</a></li>
+                        <li><a class="a">07. AQUI VIENEN LOS BLUE JEANS</a></li>
+                        <li><a class="a">08. NO MAS NADA</a></li>
+                        <li><a class="a">09. CUERDAS, GARGANTAS Y CABLES</a></li>
+                        <li><a class="a">10. PININI REGGAE</a></li>
+                    </ol>
+                </div>
+            </div>
+        </div>
     </main>
     
-    <footer class="colorFondoFooter tamañoFooter">
-        <div class="divFooter">
-            <a class="linkFooter" href="https://open.spotify.com/artist/10AzTrYMPVVmpKoBP5bX9W?si=L51oy-vmQ6WoRWnyUpYfBg" target="_blank">spotify</a>
+    <footer class="footer container-fluid">
+        <div class="contenedorImagenFinal">
+            <img class="imagenFinal" src="../assets/img/logo footer.png" alt="">
         </div>
-        <div class="textoFooter">
+        <div class="divFooter">
+            <a class="linkFooter" href="https://open.spotify.com/artist/10AzTrYMPVVmpKoBP5bX9W?si=L51oy-vmQ6WoRWnyUpYfBg" target="_blank"><i class="fa-brands fa-spotify fa-2x "></i></i></i></a>
+        </div>
+        <div class="divTextoFooter">
             <p>todos los derechos reservados</p>
         </div>
     </footer>
+    <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

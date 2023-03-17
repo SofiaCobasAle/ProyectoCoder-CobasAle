@@ -1,5 +1,3 @@
-
-
 /*tipografia*/
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,300;0,400;0,700;1,100&display=swap');
 
@@ -14,170 +12,322 @@
 /*estilos generales de texto*/
 /*txt*/
 .h1{
-    font-size: 35px;
-    font-weight:600;
+    color: white;
+    font-weight: 600;
+}
+.h2{
     color: white;
 }
-
-.h2{
-    font-size: 24px;
-    font-weight: 400;
+.h3{
     color: rgba(215, 45, 38, 1);
+    font-weight: 600;
     text-align: center;
 }
-
-.h3{
-    font-size: 18;
+.h4{
+    color: white;
     font-weight: 600;
+}
+.h5{
+    color: rgba(215, 45, 38, 1);
+}
+.h5b{
+    color: rgb(247, 247, 247);
+    font-weight: 600;
+}
+.h6{
+    color:white
+}
+.parrafos{
+    color: white;
+    text-align: justify;
+    font-weight: 300;
+    font-size: 1.1rem;
+}
+.parrafos2{/* parrafo sin justificar */
     color: white;
 }
 
-.parrafos{
-    color: white;
+.parrafos3{/* parrafo sin justificar */
+    color: rgba(215, 45, 38, 1);
+    font-size: 0.80rem;
+    line-height: 1;
+    text-align: right;
+}
+.italica{
+    color: rgba(215, 45, 38, 1);
+    text-align: justify;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+/* listas de temas en discos */
+li { 
+    list-style:none; 
 }
 
 
 /* comienza estilado del header */
+
+/* ESTILADOS DE HEADER con BOOTSTRAP */
 .Header{
-    background-color: black;
     position: sticky ;   
-    width: 100%;
     top:0;
     z-index:10;
 }
-
-/*logo header*/
+.navbar-bgcolor{
+    background-color: black;
+}
+/*logo header - faltaria aplicar mediaqueris al logo y modificar icono menu h.porque no se ve con el bg negro*/
 .logo{
-    display: inline-block;
-    width: 20%;
+    height: 5rem;
+}
+@media(max-width: 740px){
+    .logo{
+        height: 3.5rem;
+    }
+}
+.nav-link-margin{
+    margin: 0.7rem;
+}
+.nav-link{ 
+    color: rgba(215, 45, 38, 1);
+    font-family:'IBM Plex Sans', sans-serif;
+}
+.nav-link2 {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: #d1d1d1;
+    text-decoration: none;
 }
 
-/*navbar*/
-.listaNavegacionHeader{
-    list-style: none;
-}
-.linkNavHeader{
-    text-decoration: none;
-    color: white;
-    display: inline-block;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding: 10px;
-}
-.a{
-    color: rgba(215, 45, 38, 1);
-    font-size: 18px;
-    font-weight: 400;
-    text-decoration: none;
-}
-.aSeleccionado{
-    color: white;
-    font-size: 18px;
-    font-weight: 500 ;
-    text-decoration: none;
-}
+
+
 /* termina estilado del header */
 
 
 
-/* comienza estilado del BODY index*/
-.colorBody{
+/* comienza estilado del BODY del index*/
+/*estilados MAIN DEL INDEX*/
+.colorFondoPortada{
     background-color: black;
 }
-
-/*estilados MAIN DEL INDEX*/
 /*portada*/
 .contenedorPortadaInicio{
     width: 100%;
 } 
-
 .portadaInicio{
     /*width: 1350px;*/
     width: 100%;
 }
-
-.sumoH1{ /*div que contiene el h1 del index y el primer parrafo de la pagina*/
-    padding: 20px;
+.divSumoH1{ /*div que contiene el h1 del index y el primer parrafo de la pagina*/
+    padding-top: 15vh;
+    padding-bottom: 30vh;
 }
 
 
 
 /*section integrantes*/
+.colorFondoIntegrantes{
+    background-color: rgb(15, 15, 15);
+}
 .sectionIntegrantes{
-    padding-top: 50vh;
+    padding-top: 30vh;
     padding-bottom: 30vh;
 }
 .divH2{ /*div que contiene h2 del index con su parrafo*/
-    padding: 20px;
+    padding-bottom: 2vh;
 }
-/*fotos de los integrantes*/
+.divPadreIntegrantes{ /*div que contiene todas las fotos y los nombres de los integrantes*/
+    display: flex;
+    justify-content: space-between;
+}
+.divIntegrantes{/*div una foto y un nombre de musico*/
+    display: inline flex;
+    text-align: center;
+}
+/*fotos de los integrantes */
 .fotoIntegrantesInicio{
-    width: 215px;
-    display: inline;
-}
-.divIntegrantes{
+    width: 175px;
     display: inline;
 }
 .linkNombreWiky{
     text-decoration: none;
-    color: rgba(215, 45, 38, 1);
+    color: rgba(215, 45, 38, 1); 
 }
 
 
 /*section mapas*/
-.sectionMapas{
-    padding-bottom: 20vh;
-    background-color: black
+.colorFondoMapas{
+    background-color:black;
+    padding-top: 30vh;
+    padding-bottom: 10vh;
 }
-
 /*mapas*/
-.divsMapas{
-    background-color: black;
-    padding-top: 10vh;
+.divPadreMapa{/*div que contiene un titulo un parrrafo y un mapa*/
+    display:flex;
+    flex-direction: column;
+    height: 50vh;
+    margin-bottom: 10vh;
+    border-bottom: 2.5px solid rgb(15, 15, 15);
+}
+.divMapaTexto{/*div que contiene un titulo y un parrafo*/
+    height: 10%;
+    display:flex;
+}
+.divMapaTexto2{/*div que contiene un titulo y un parrrafo*/
+    height: 10%;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.divMapa{/*div que contiene un mapa*/
+    height: 70%;
+    width: 100%;
+    margin-top: 1vh;
+    margin-bottom: 1.5vh;
+}
+.mapa{
+    height: 100%;
+    width: 100%;
 }
 
 
-/*imagen final*/
-.contenedorImagenFinal{
-    margin: 100px;
-    background-color: black;
-    padding-top: 5vh;
-    padding-bottom: 5vh;
-    padding-left: 35%;
-}
 
-.imagenFinal{
-    height: 200px;
-}
 /* termina estilado del BODY index*/
+
+
+
+
+/* Comienza el estilado de page DISCOS*/
+
+/* BODY DE DISCOS con bootstrap*/
+.colorBody{
+    background-color: rgb(15, 15, 15);
+}
+.mainDiscos{
+    padding-bottom: 20vh;
+}
+.divDiscosH1{ /* div que contiene el h1 y el parrafo de comienzo de pag*/
+    margin-top: 10vh;
+    margin-bottom: 20vh;
+}
+.altoDivPadreDisco{ /*div que contiene la imagen de la tapa del disco, el titulo y la lista de temas*/
+    margin-top:10vh ;
+    padding-bottom: 10vh;
+    border-bottom: 2.5px solid black;
+}
+.divDiscoTapa{ /*div que contiene la imagen de la tapa del disco*/
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    height: 80vh;
+}
+.tapaDisco{/*imagen de la tapa*/
+    height: 98%;
+    object-fit: cover;
+}
+.divDiscoTextosPadre{ /*div que contiene nombre del dico año y lista de temas*/
+    display: inline-flex;
+    flex-direction: column;
+    justify-content:center;
+
+    height: 80vh;
+}
+.divDiscoTitulo{/* div que contiene nombre del dico y año */
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    height: 20%;
+    padding-left: 1.9rem;
+}
+.divDiscoLista{ /* div que contiene lista de temas*/
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 70%;
+    margin-top: 5vh;
+}
+/* estilado de la lista de temas*/
+.a {
+    color: white;
+    text-decoration: none;
+}
+.a:hover {
+    color: rgba(215, 45, 38, 1);
+}
+
+
+
+
+/* Comienza el estilado de page CONTACTO*/
+/* BODY DE CONTACTO*/
+
+.divContactoH1{ /* div que contiene el h1 y el parrafo de comienzo de pag*/
+    background-color: black;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+.divPadreContacto{ /*div que contiene la imagen y el formulario de contacto*/
+    background-color: blueviolet;
+    height: 100%;
+}
+.divImagenContacto{ /*div que contiene la imagen de contacto*/
+    background-color: burlywood;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    height: 80vh;
+    background-image: url(../assets/img/fotoparaformulariotren.jpg);
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+/*.imagenContacto{
+    height: 100%;
+    object-fit: cover;
+}*/
+.divFormularioContacto{ /*div que contiene el formulario de contacto*/
+    background-color: cadetblue;
+}
+
+/* termina el estilado de page CONTACTO*/
+
+
 
 
 
 /* comienza estilado del footer/
 /* estilados del footer*/
-.colorFondoFooter{
+
+.footer{ /*FALTA SOLUCIONAR EL ESPACIO QUE QUEDA ENTRE EL FOOTER Y LA PARTE INGERIOR DE LA PANTALLA*/
     background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    padding-top: 20vh;
+    padding-bottom: 5vh;
 }
-.tamañoFooter{
-    height: 20vh;
-    width: 100%;
+/*imagen final (cara luca)*/
+.contenedorImagenFinal{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    height: 30vh;
+    margin-bottom: 15vh;
 }
+.imagenFinal{
+    height: 100%;
 
+}
 /*link spotify*/
-.divFooter{ /*div que contiene el link a spotify*/
-    margin: 5vh 48%;
-    padding-top: 5vh;
+.divFooter{ /*div que contiene el link a spotify del footer*/
+    padding: 5vh;
+    text-align: center;
 }
-
 .linkFooter{
     text-decoration: none;
-    color: green;
-    width: 25%;
-    margin: 10px auto;
+    color: rgb(37, 197, 90);
 }
-
-/*texto*/
-.textoFooter{
+/*texto*/ 
+.divTextoFooter{ /*div que contiene el texto del footer*/
     color: white;
     font-size: 12px;
     text-align: center;
