@@ -1,0 +1,21 @@
+/*ESTILADO PAGE VIDEOS*/
+.colorBodyVideos{
+    background-color: $color-gris;
+}
+.mainVideos{
+    @include margin-tb(0, 20vh);
+}
+.divVideosH1{/*div que contiene el h1 y el parrafo de comienzo de pag*/
+    @include margin-tb(10vh, 10vh);
+}
+
+.divVideo{
+    @include margin-tb(10vh, 10vh);
+    .divVideo__video{
+        width: 100%;
+        height: 75vh;
+        border-color:$color-negro;
+        border-width: 3px;
+        border-style: dotted;
+    }
+}

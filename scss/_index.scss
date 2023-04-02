@@ -1,0 +1,84 @@
+
+/*estilados MAIN DEL INDEX*/
+.colorFondoH1{
+    background-color: $color-negro;
+}
+
+/*portada*/
+.contenedorPortada{
+    width: 100%;
+    .contenedorPortada__imagen{
+        width: 100%;
+    }
+} 
+.divSumoH1{ /*div que contiene el h1 del index y el primer parrafo de la pagina*/
+    @include margin-tb(15vh, 30vh);
+}
+
+/*section integrantes*/
+.colorFondoIntegrantes{
+    background-color: $color-gris;
+}
+.sectionIntegrantes{
+    padding-top: 30vh;
+    padding-bottom: 30vh;
+    .sectionIntegrantes__h2{/*div que contiene h2 del index con su parrafo*/
+        padding-bottom: 2vh;
+    }
+    .sectionIntegrantes__integrantes{ /*div que contiene todas las fotos y los nombres de los integrantes*/
+        display: flex;
+        justify-content: space-between;
+        .sectionIntegrantes__integrantes__card{ /*div una foto y un nombre de musico*/
+            display: inline flex;
+            text-align: center;
+            .sectionIntegrantes__integrantes__card__foto{
+                width: 175px;
+                display: inline;
+            }
+            .sectionIntegrantes__integrantes__card__nombre{
+                text-decoration: none;
+                color:$color-rojo; 
+                &:hover{
+                    color: $color-grisclaro;
+                }
+            }
+        }
+    }
+}
+
+
+/*section mapas*/
+.colorFondoMapas{
+    background-color:$color-negro;
+    padding-top: 30vh;
+    padding-bottom: 10vh;
+}
+/*mapas*/
+.divMapas{ /*div que contiene un titulo un parrrafo y un mapa*/
+    @include margin-tb(0vh, 10vh);
+    display:flex;
+    flex-direction: column;
+    height: 50vh;
+    border-bottom: 2.5px solid $color-gris;
+    .divMapas__titulo{
+        height: 10%;
+        display:flex;
+    }
+    .divMapas__cajamapa{
+        @include margin-tb(1vh, 1.5vh);
+        height: 70%;
+        width: 100%;
+        .divMapas__cajamapa__mapa{
+            height: 100%;
+            width: 100%;
+        }   
+    }
+    .divMapas__texto{
+        height: 10%;
+        display:flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+}
+
+/* termina estilado del BODY index*/

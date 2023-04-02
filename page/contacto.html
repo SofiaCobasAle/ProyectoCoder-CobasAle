@@ -4,14 +4,16 @@
     <meta charset="UTF-8"> 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Llegando los monos</title> 
+    <meta name="description" content="Formulario de contacto.">
+    <meta name="keywords" content="Sumo, Rock, Rock Nacional, Luca Podan, Germán Daffunchio, Diego Arnedo, Ricardo Mollo, Roberto Pettinato, obras">
+    <title>Contacto - Llegando los monos</title> 
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <script src="https://kit.fontawesome.com/0bd31c9dc1.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../scss/estilod.css">
 </head>
 
-<body>
+<body class="bodyContacto">
     <header class="Header conteiner-fluid"> 
         <!-- para las navbar utilicé uno de los formatos de bootstrap pero modifique algunas cosas: agregué mi logo, cambié la disposicioón de los links y los colores. NO SUPE COMO CAMBIAR EL ICONO DEL MENU HAMBURGUESA DE BOOTSTRAP QUE NO SE VE CON FONDO NEGRO de la navbar-->
         <nav class="navbar navbar-expand-lg navbar-bgcolor">
@@ -33,71 +35,46 @@
         </nav>
     </header>
 
-    <main class="container">
+    <main class="mainContacto container">
         <div class="divContactoH1">
             <h1 class="h1">CONTACTO</h1>
-            <p class="parrafos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, molestias dolorem. Quas ipsa facere praesentium delectus accusamus earum id laboriosam sit! Distinctio illo impedit mollitia inventore ducimus unde veritatis id?</p>
+            <p class="parrafos">¿Queres decir algo? Mandá un mensaje chabón.</p>
         </div>
-        <div class="row divPadreContacto">
+        <div class="row divContacto">
             <div class="col-sm-12 col-md-12 col-lg-6 divImagenContacto">
-                <!--<img class="imagenContacto" src="../assets/img/img.contacto.jpg" alt="Luca con una petaca en la cabeza y gafas de sol, fotografía tomada durante un show">-->
             </div>
             <div class="col-sm-12 col-md-12 col-lg-6 divFormularioContacto">
                 <form>
                     <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Email</label>
+                    <label for="exampleInputEmail1" class="form-label txtForm">Email</label>
                     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                     </div>
                     <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">Nombre</label>
+                    <label for="exampleInputPassword1" class="form-label txtForm">Nombre</label>
                     <input type="text" class="form-control" id="exampleInputPassword1">
                     </div>
                     <div class="mb-3">
-                        <label for="exampleInputPassword1" class="form-label">Mensaje</label>
+                        <label for="exampleInputPassword1" class="form-label txtForm">Mensaje</label>
                         <textarea name="" id="exampleInputMensaje1" cols="30" rows="8" class="form-control"></textarea>
                     </div>
-                    
                     <button type="submit" class="btn btn-primary">Enviar</button>
                 </form>
             </div>
             
         </div>
-
-        <!--<div>
-            <form action="">
-                <div>
-                    <label for="nombre">Nombre</label>
-                    <input id="nombre" name="nombre" type="text" placeholder="Nombre de usuario..."minlength="3" maxlength="50" required autofocus autocomplete="on">
-                </div>
-                <div>
-                    <label for="mail">Mail</label>
-                    <input id="mail" name="mail" type="email" placeholder="Mail..."minlength="3" maxlength="50" required autofocus autocomplete="on">
-                </div>
-                <div>
-                    <textarea  cols="30" rows="10" placeholder="Mensaje..."></textarea>
-                </div>
-                <div>
-                    <input type="submit" value="Enviar">
-                    <input type="reset" value="Borrar todo">
-                </div>
-            </form>
-        </div>
-        <div>
-        <img src="../assets/img/img.contacto.jpg" alt="Luca con una petaca en la cabeza y gafas de sol, fotografía tomada durante un show">
-        </div>-->
     </main>
     
-    <footer class="footer">
-        <div class="contenedorImagenFinal">
-            <img class="imagenFinal" src="../assets/img/logo footer.png" alt="">
+    <footer class="footer container-fluid">
+        <div class="footer__contenedorImagenFinal">
+            <img class="footer__contenedorImagenFinal__imagen" src="../assets/img/logo footer.png" alt="">
         </div>
-        <div class="divFooter">
-            <a class="linkFooter" href="https://open.spotify.com/artist/10AzTrYMPVVmpKoBP5bX9W?si=L51oy-vmQ6WoRWnyUpYfBg" target="_blank"><i class="fa-brands fa-spotify fa-2x "></i></i></i></a>
+        <div class="footer__divSpotify">
+            <a class="footer__divSpotify__link" href="https://open.spotify.com/artist/10AzTrYMPVVmpKoBP5bX9W?si=L51oy-vmQ6WoRWnyUpYfBg" target="_blank"><i class="fa-brands fa-spotify fa-2x "></i></i></i></a>
         </div>
-        <div class="divTextoFooter">
-            <p>todos los derechos reservados</p>
+        <div class="footer__texto">
+            <p>Copyright © 2023- Todos los derechos reservados</p>
         </div>
-    </footer>
+    </footer> 
     <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

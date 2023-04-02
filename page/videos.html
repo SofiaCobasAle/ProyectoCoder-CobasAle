@@ -4,14 +4,16 @@
     <meta charset="UTF-8"> 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Llegando los monos</title> 
+    <meta name="description" content="Esta página reúne grabaciones de shows en vivo de la banda de rock argentina Sumo  (1981-1987).">
+    <meta name="keywords" content="Sumo, Rock, Rock Nacional, Luca Podan, Germán Daffunchio, Diego Arnedo, Ricardo Mollo, Roberto Pettinato, obras">
+    <title>Videos - Llegando los monos</title> 
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <script src="https://kit.fontawesome.com/0bd31c9dc1.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../scss/estilod.css">
 </head>
 
-<body>
+<body class="colorBodyVideos">
     <header class="Header conteiner-fluid"> 
         <!-- para las navbar utilicé uno de los formatos de bootstrap pero modifique algunas cosas: agregué mi logo, cambié la disposicioón de los links y los colores. NO SUPE COMO CAMBIAR EL ICONO DEL MENU HAMBURGUESA DE BOOTSTRAP QUE NO SE VE CON FONDO NEGRO de la navbar-->
         <nav class="navbar navbar-expand-lg navbar-bgcolor">
@@ -33,25 +35,41 @@
         </nav>
     </header>
     
-    <main>
-        <h1>VIDEOS</h1>
-        <br>
-        <iframe width="1120" height="630" src="https://www.youtube.com/embed/DB2obYP14mo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        <p>Sumo, Obras 1986, Show Completo (audio e imagen restaurada y masterizada)</p>
+    <main class="container mainVideos">
+        <div class="divVideosH1">
+            <h1 class="h1">VIDEOS</h1>
+            <p class="parrafos">Grabaciones de shows en vivo.</p>
+        </div>
+        <div class="divVideo">
+            <div class="col-12 ">
+                <iframe src="https://www.youtube.com/embed/DB2obYP14mo" title="YouTube video player"frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;picture-in-picture; web-share" allowfullscreen class="divVideo__video"></iframe>
+            </div>
+            <div class="col-12">
+                <p class="parrafos4">Sumo, Obras 1986, Show Completo.</p>
+            </div>
+        </div>
+        <div class="divVideo">
+            <div class="col-12">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/wR6dnG9gt8g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="divVideo__video"></iframe>
+            </div>
+            <div class="col-12">
+                <p class="parrafos4">Sumo, Velez 1985.</p>
+            </div>
+        </div>
     </main>
     <br>
     
-    <footer class="footer">
-        <div class="contenedorImagenFinal">
-            <img class="imagenFinal" src="../assets/img/logo footer.png" alt="">
+    <footer class="footer container-fluid">
+        <div class="footer__contenedorImagenFinal">
+            <img class="footer__contenedorImagenFinal__imagen" src="../assets/img/logo footer.png" alt="">
         </div>
-        <div class="divFooter">
-            <a class="linkFooter" href="https://open.spotify.com/artist/10AzTrYMPVVmpKoBP5bX9W?si=L51oy-vmQ6WoRWnyUpYfBg" target="_blank"><i class="fa-brands fa-spotify fa-2x "></i></i></i></a>
+        <div class="footer__divSpotify">
+            <a class="footer__divSpotify__link" href="https://open.spotify.com/artist/10AzTrYMPVVmpKoBP5bX9W?si=L51oy-vmQ6WoRWnyUpYfBg" target="_blank"><i class="fa-brands fa-spotify fa-2x "></i></i></i></a>
         </div>
-        <div class="divTextoFooter">
-            <p>todos los derechos reservados</p>
+        <div class="footer__texto">
+            <p>Copyright © 2023- Todos los derechos reservados</p>
         </div>
-    </footer>
+    </footer> 
     <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

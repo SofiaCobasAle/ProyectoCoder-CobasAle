@@ -1,0 +1,51 @@
+/* Comienza el estilado de page DISCOS*/
+
+/* BODY DE DISCOS con bootstrap*/
+.colorBody{
+    background-color: $color-gris;
+}
+.mainDiscos{
+    @include margin-tb(0, 20vh);
+}
+.divDiscosH1{ /* div que contiene el h1 y el parrafo de comienzo de pag*/
+    @include margin-tb(10vh, 10vh);
+}
+.divUnDisco{ /*div que contiene la imagen de la tapa del disco, el titulo y la lista de temas*/
+    @include margin-tb(10vh, 10vh);
+    border-bottom: 2.5px solid $color-negro;
+    .divUnDisco__divtapa{ /*div que contiene la imagen de la tapa del disco*/
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        height: 80vh;
+        .divUnDisco__divtapa__img{/*imagen de la tapa*/
+            height: 98%;
+            object-fit: cover;
+        }
+    }
+    .divUnDisco__textos{ /*div que contiene nombre del dico año y lista de temas*/
+        display: inline-flex;
+        flex-direction: column;
+        justify-content:center;
+        height: 80vh;
+        .divUnDisco__textos__titulo{/* div que contiene nombre del dico y año */
+            @include flexible (column, center);
+            height: 20%;
+            padding-left: 1.9rem;
+        }
+        .divUnDisco__textos__lista{ /* div que contiene lista de temas*/
+            @include flexible (column, flex-end);
+            height: 70%;
+            margin-top: 5vh;
+            .a {
+                color:$color-blanco;
+                text-decoration: none;
+            }
+            .a:hover {
+                color:$color-rojo;
+            }
+        }
+    }
+}
+
+/* estilado de la lista de temas*/

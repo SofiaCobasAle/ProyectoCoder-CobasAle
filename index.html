@@ -4,11 +4,13 @@
     <meta charset="UTF-8"> 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Llegando los monos</title> 
+    <meta name="description" content="Esta página reúne material sobre la banda de rock argentina Sumo (1981-1987).">
+    <meta name="keywords" content="Sumo, Rock, Rock Nacional, Luca Podan, Germán Daffunchio, Diego Arnedo, Ricardo Mollo, Roberto Pettinato, La casa de luca">
+    <title>Llegando los monos - Sumo (1981-1987).</title> 
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <script src="https://kit.fontawesome.com/0bd31c9dc1.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="./scss/estilod.css">
 </head>
 
 <body>
@@ -34,14 +36,12 @@
         </header>
 
         <main> 
-            <div class="colorFondoPortada">
+            <div class="colorFondoH1">
                 <div class="container-fluid">
-                    <div class="divPortadaConIcono">
-                        <div class="contenedorPortadaInicio">
-                            <img class="portadaInicio img-fluid" src="./assets/img/portada2.jpeg.png" class="img-fluid" alt="Sumo, por Jorge Pastoriza. De izquierda a derecha: Ricardo Mollo, Roberto Pettinato, Luca Prodan, Germán Daffunchio, Diego Arnedo, abajo en el centro: Alberto Troglio.">
-                        </div>
+                    <div class="contenedorPortada">
+                        <img class="contenedorPortada__imagen img-fluid" src="./assets/img/portada2.jpeg.png" class="img-fluid" alt="Sumo, por Jorge Pastoriza. De izquierda a derecha:Ricardo Mollo, Roberto Pettinato, Luca Prodan, Germán Daffunchio, Diego Arnedo,abajo en el centro: Alberto Troglio.">
                     </div>
-                </section>
+                </div>
                 <section class="container">
                         <div class="divSumoH1">
                             <h1 class="h1">SUMO</h1>
@@ -59,56 +59,57 @@
             <div class="colorFondoIntegrantes">
                 <section class="container sectionIntegrantes">
                     <!-- foto y nombre de cada uno de los integrantes con su link a wiki -->
-                    <div class="divH2">
-                        <h3 class="h3">INTEGRANTES</h3>
+                    <div class="divH2 sectionIntegrantes__h2">
+                        <h3 class="h3">INTEGRANTES</h3><!--TENCION, MODIFICAR.. TIENE QUE SER H2 -->
                         <!--<p class="parrafos">Sumo nació y murió con Luca. La banda tuvo varios cambios en su formación durante 1981 y 1982 hasta que el grupo se consolidó en 1983. </p>-->
+                        <p class="parrafos5">- Formación de Sumo en 1984 - </p>
                     </div>
                     
-                    <div class=" row divPadreIntegrantes">
-                        <div class="col-sm-12 col-md-4 col-lg-4 col-xl-2 divIntegrantes">
-                            <img class="fotoIntegrantesInicio" src= "./assets/img/fotosintegrantes_luca.jpg" alt="Foto de Luca Prodan">
+                    <div class=" row sectionIntegrantes__integrantes">
+                        <div class="col-sm-12 col-md-4 col-lg-4 col-xl-2 sectionIntegrantes__integrantes__card">
+                            <img class="sectionIntegrantes__integrantes__card__foto" src= "./assets/img/fotosintegrantes_luca.jpg" alt="Foto de Luca Prodan">
                             <br>
-                            <a class="linkNombreWiky" href="https://es.wikipedia.org/wiki/Luca_Prodan"target="_blank">Luca Prodan</a>
+                            <a class="sectionIntegrantes__integrantes__card__nombre" href="https://es.wikipedia.org/wiki/Luca_Prodan"target="_blank">Luca Prodan</a>
                             <br>
                             <p class="parrafos2">(voz)</p>
                         </div>
                 
-                        <div class="col-sm-12 col-md-4 col-lg-4 col-xl-2 divIntegrantes">
-                            <img class="fotoIntegrantesInicio" src= "./assets/img/fotosintegrantes_german.jpg" alt="Foto de Germán Daffunchio">
+                        <div class="col-sm-12 col-md-4 col-lg-4 col-xl-2 sectionIntegrantes__integrantes__card">
+                            <img class="sectionIntegrantes__integrantes__card__foto" src= "./assets/img/fotosintegrantes_german.jpg" alt="Foto de Germán Daffunchio">
                             <br>
-                            <a class="linkNombreWiky" href="https://es.wikipedia.org/wiki/Germ%C3%A1n_Daffunchio"target="_blank">Germán Daffunchio</a>
+                            <a class="sectionIntegrantes__integrantes__card__nombre" href="https://es.wikipedia.org/wiki/Germ%C3%A1n_Daffunchio"target="_blank">Germán Daffunchio</a>
                             <br>
                             <p class="parrafos2">(guitarra)</p>
                         </div>
                 
-                        <div class="col-sm-12 col-md-4 col-lg-4 col-xl-2 divIntegrantes">
-                            <img class="fotoIntegrantesInicio" src="./assets/img/fotosintegrantes_diego.jpg" alt="Foto de Diego Arnedo">
+                        <div class="col-sm-12 col-md-4 col-lg-4 col-xl-2 sectionIntegrantes__integrantes__card">
+                            <img class="sectionIntegrantes__integrantes__card__foto" src="./assets/img/fotosintegrantes_diego.jpg" alt="Foto de Diego Arnedo">
                             <br>
-                            <a class="linkNombreWiky" href="https://es.wikipedia.org/wiki/Diego_Arnedo" target="_blank">Diego Arnedo</a>
+                            <a class="sectionIntegrantes__integrantes__card__nombre" href="https://es.wikipedia.org/wiki/Diego_Arnedo" target="_blank">Diego Arnedo</a>
                             <br>
                             <p class="parrafos2">(bajo)</p>
                         </div>
                 
-                        <div class="col-sm-12 col-md-4 col-lg-4 col-xl-2 divIntegrantes">
-                            <img class="fotoIntegrantesInicio"src="./assets/img/fotosintegrantes_mollo.jpg"alt="Foto de Ricardo Mollo">
+                        <div class="col-sm-12 col-md-4 col-lg-4 col-xl-2 sectionIntegrantes__integrantes__card">
+                            <img class="sectionIntegrantes__integrantes__card__foto"src="./assets/img/fotosintegrantes_mollo.jpg"alt="Foto de Ricardo Mollo">
                             <br>
-                            <a class="linkNombreWiky" href="https://es.wikipedia.org/wiki/Ricardo_Mollo" target="_blank">Ricardo Mollo</a>
+                            <a class="sectionIntegrantes__integrantes__card__nombre" href="https://es.wikipedia.org/wiki/Ricardo_Mollo" target="_blank">Ricardo Mollo</a>
                             <br>
                             <p class="parrafos2">(guitarra)</p>
                         </div>
                 
-                        <div class="col-sm-12 col-md-4 col-lg-4 col-xl-2 divIntegrantes">
-                            <img class="fotoIntegrantesInicio" src="./assets/img/fotosintegrantes_superman.jpg" alt="Foto de Alberto Troglio">
+                        <div class="col-sm-12 col-md-4 col-lg-4 col-xl-2 sectionIntegrantes__integrantes__card">
+                            <img class="sectionIntegrantes__integrantes__card__foto" src="./assets/img/fotosintegrantes_superman.jpg" alt="Foto de Alberto Troglio">
                             <br>
-                            <a class="linkNombreWiky" href="https://es.wikipedia.org/wiki/Alberto_Troglio" target="_blank">Alberto Troglio</a>
+                            <a class="sectionIntegrantes__integrantes__card__nombre" href="https://es.wikipedia.org/wiki/Alberto_Troglio" target="_blank">Alberto Troglio</a>
                             <br>
                             <p class="parrafos2">(bateria)</p>
                         </div>
                 
-                        <div class="col-sm-12 col-md-4 col-lg-4 col-xl-2 divIntegrantes">
-                            <img class="fotoIntegrantesInicio" src="./assets/img/fotosintegrantes_roberto.jpg" alt="Foto de Roberto Pettinato">
+                        <div class="col-sm-12 col-md-4 col-lg-4 col-xl-2 sectionIntegrantes__integrantes__card">
+                            <img class="sectionIntegrantes__integrantes__card__foto" src="./assets/img/fotosintegrantes_roberto.jpg" alt="Foto de Roberto Pettinato">
                             <br>
-                            <a class="linkNombreWiky" href="https://es.wikipedia.org/wiki/Roberto_Pettinato_(hijo)" target="_blank">Roberto Pettinato </a>
+                            <a class="sectionIntegrantes__integrantes__card__nombre" href="https://es.wikipedia.org/wiki/Roberto_Pettinato_(hijo)" target="_blank">Roberto Pettinato </a>
                             <br>
                             <p class="parrafos2">(saxo)</p>
                         </div>
@@ -117,26 +118,26 @@
             </div>
 
             <div class="colorFondoMapas">
-                <section class="container sectionMapas">
-                    <div class="row divPadreMapa">
-                        <div class="col-12 divMapaTexto">
-                            <h4 class="h5b">LA CASA DE LUCA</h4>
+                <section class="container">
+                    <div class="row divPadreMapa divMapas">
+                        <div class="col-12 divMapaTexto divMapas__titulo">
+                            <h4 class="h5b">LA CASA DE LUCA</h4><!--TENCION, MODIFICAR.. TIENE QUE SER H3 -->
                         </div>
-                        <div class="col-12 divMapa">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.7640471801415!2d-58.37495628519508!3d-34.610127565343355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccad4a4482fad%3A0x339a96860e09130c!2sLuca%20Prodan%20Casa!5e0!3m2!1ses-419!2sar!4v1676400943659!5m2!1ses-419!2sar" class="mapa" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <div class="col-12 divMapa divMapas__cajamapa">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.7640471801415!2d-58.37495628519508!3d-34.610127565343355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccad4a4482fad%3A0x339a96860e09130c!2sLuca%20Prodan%20Casa!5e0!3m2!1ses-419!2sar!4v1676400943659!5m2!1ses-419!2sar" class="divMapas__cajamapa__mapa" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
-                        <div class="col-12 divMapaTexto2">
+                        <div class="col-12 divMapaTexto2 divMapas__texto">
                             <p class="parrafos3">Adolfo Alsina 451, Buenos Aires.</p>
                         </div>
                     </div>
-                    <div class="row divPadreMapa">
-                        <div class="col-12 divMapaTexto">
-                            <h4 class="h5b">EL ALTAR</h4>
+                    <div class="row divPadreMapa divMapas">
+                        <div class="col-12 divMapaTexto divMapas__titulo">
+                            <h4 class="h5b">EL ALTAR</h4><!--TENCION, MODIFICAR.. TIENE QUE SER H3 -->
                         </div>
-                        <div class="col-12 divMapa">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13120.813863754804!2d-58. 3469351!3d-34.7000477!3m2!1i1024!2i768!4f13. 1!3m3!1m2!1s0x95a332e888dbf181%3A0x2241466e0010dbb7!2sCementerio%20Municipal%20de%20Avellaneda!5e0   !3m2!1ses-419!2sar!4v1676401339641!5m2!1ses-419!2sar" class="mapa" style="border:0;"   allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <div class="col-12 divMapa divMapas__cajamapa">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13120.813863754804!2d-58. 3469351!3d-34.7000477!3m2!1i1024!2i768!4f13. 1!3m3!1m2!1s0x95a332e888dbf181%3A0x2241466e0010dbb7!2sCementerio%20Municipal%20de%20Avellaneda!5e0   !3m2!1ses-419!2sar!4v1676401339641!5m2!1ses-419!2sar" class="divMapas__cajamapa__mapa" style="border:0;"   allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
-                        <div class="col-12 divMapaTexto2">
+                        <div class="col-12 divMapaTexto2 divMapas__texto">
                             <p class="parrafos3">Av. Crisólogo Larralde 4174, Buenos Aires.</p>
                         </div>
                     </div>
@@ -146,14 +147,14 @@
         </main>
         
         <footer class="footer container-fluid">
-            <div class="contenedorImagenFinal">
-                <img class="imagenFinal" src="./assets/img/logo footer.png" alt="">
+            <div class="footer__contenedorImagenFinal">
+                <img class="footer__contenedorImagenFinal__imagen" src="./assets/img/logo footer.png" alt="">
             </div>
-            <div class="divFooter">
-                <a class="linkFooter" href="https://open.spotify.com/artist/10AzTrYMPVVmpKoBP5bX9W?si=L51oy-vmQ6WoRWnyUpYfBg" target="_blank"><i class="fa-brands fa-spotify fa-2x "></i></i></i></a>
+            <div class="footer__divSpotify">
+                <a class="footer__divSpotify__link" href="https://open.spotify.com/artist/10AzTrYMPVVmpKoBP5bX9W?si=L51oy-vmQ6WoRWnyUpYfBg" target="_blank"><i class="fa-brands fa-spotify fa-2x "></i></i></i></a>
             </div>
-            <div class="divTextoFooter">
-                <p>todos los derechos reservados</p>
+            <div class="footer__texto">
+                <p>Copyright © 2023- Todos los derechos reservados</p>
             </div>
         </footer> 
     <script src="./js/bootstrap.bundle.min.js"></script>

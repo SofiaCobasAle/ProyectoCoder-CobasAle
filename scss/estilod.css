@@ -1,0 +1,582 @@
+@charset "UTF-8";
+/*selector universal*/
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,300;0,400;0,700;1,100&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+/*variables*/
+/*tipografia*/
+/*estilos generales de texto*/
+/*txt*/
+.h1 {
+  color: white;
+  font-weight: 600;
+}
+
+.h2 {
+  color: white;
+}
+
+.h3 {
+  color: #DA0D00;
+  font-weight: 600;
+  text-align: center;
+}
+
+.h3b {
+  color: white;
+  font-weight: 600;
+}
+
+.h4 {
+  color: white;
+  font-weight: 600;
+}
+
+.h5 {
+  color: #DA0D00;
+}
+
+.h5b {
+  color: white;
+  font-weight: 600;
+}
+
+.h6 {
+  color: white;
+}
+
+.parrafos {
+  color: white;
+  font-weight: 300;
+  font-size: 1.1rem;
+  text-align: justify;
+}
+
+.parrafos2 { /* parrafo sin justificar */
+  color: white;
+}
+
+.parrafos3, .parrafos5, .parrafos4 {
+  color: #DA0D00;
+  font-weight: 400;
+  font-size: 0.8rem;
+  line-height: 1;
+  text-align: right;
+}
+
+.parrafos4 {
+  color: black;
+  line-height: 1.5;
+}
+
+.parrafos5 {
+  color: black;
+  text-align: center;
+}
+
+.parrafos6 { /* parrafo sin justificar */
+  color: #DA0D00;
+}
+
+.txtForm { /* texto formulario */
+  color: white;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.italica {
+  color: #DA0D00;
+  font-weight: 600;
+  font-size: 1.1rem;
+  text-align: justify;
+}
+
+/* listas de temas en discos */
+li {
+  list-style: none;
+}
+
+/* comienza estilado del header */
+/* ESTILADOS DE HEADER con BOOTSTRAP */
+.Header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.navbar-bgcolor {
+  background-color: black;
+  box-shadow: 0px 2px 24px 3px rgb(0, 0, 0);
+}
+
+/*logo header - faltaria  modificar icono menu h.porque no se ve con el bg negro*/
+.logo {
+  height: 5rem;
+}
+
+@media (max-width: 740px) {
+  .logo {
+    height: 3.5rem;
+  }
+}
+.nav-link-margin {
+  margin: 0.7rem;
+}
+
+.nav-link {
+  color: #909090;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 400;
+}
+
+.nav-link2 {
+  color: #DA0D00;
+  font-family: "IBM Plex Sans", sans-serif;
+  display: block;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* termina estilado del header */
+/* comienza estilado del footer/
+/* estilados del footer*/
+.footer {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 20vh;
+  padding-bottom: 5vh;
+}
+.footer .footer__contenedorImagenFinal { /*imagen final (cara luca)*/
+  margin-top: 0vh;
+  margin-bottom: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+}
+.footer .footer__contenedorImagenFinal .footer__contenedorImagenFinal__imagen {
+  height: 100%;
+}
+.footer .footer__divSpotify { /*div que contiene el link a spotify del footer*/
+  padding: 5vh;
+  text-align: center;
+}
+.footer .footer__divSpotify .footer__divSpotify__link { /*link spotify*/
+  text-decoration: none;
+  color: rgb(37, 197, 90);
+}
+.footer .footer__texto { /*div que contiene el texto del footer*/
+  color: white;
+  font-size: 12px;
+  text-align: center;
+}
+
+/*estilados MAIN DEL INDEX*/
+.colorFondoH1 {
+  background-color: black;
+}
+
+/*portada*/
+.contenedorPortada {
+  width: 100%;
+}
+.contenedorPortada .contenedorPortada__imagen {
+  width: 100%;
+}
+
+.divSumoH1 { /*div que contiene el h1 del index y el primer parrafo de la pagina*/
+  margin-top: 15vh;
+  margin-bottom: 30vh;
+}
+
+/*section integrantes*/
+.colorFondoIntegrantes {
+  background-color: #252525;
+}
+
+.sectionIntegrantes {
+  padding-top: 30vh;
+  padding-bottom: 30vh;
+}
+.sectionIntegrantes .sectionIntegrantes__h2 { /*div que contiene h2 del index con su parrafo*/
+  padding-bottom: 2vh;
+}
+.sectionIntegrantes .sectionIntegrantes__integrantes { /*div que contiene todas las fotos y los nombres de los integrantes*/
+  display: flex;
+  justify-content: space-between;
+}
+.sectionIntegrantes .sectionIntegrantes__integrantes .sectionIntegrantes__integrantes__card { /*div una foto y un nombre de musico*/
+  display: inline flex;
+  text-align: center;
+}
+.sectionIntegrantes .sectionIntegrantes__integrantes .sectionIntegrantes__integrantes__card .sectionIntegrantes__integrantes__card__foto {
+  width: 175px;
+  display: inline;
+}
+.sectionIntegrantes .sectionIntegrantes__integrantes .sectionIntegrantes__integrantes__card .sectionIntegrantes__integrantes__card__nombre {
+  text-decoration: none;
+  color: #DA0D00;
+}
+.sectionIntegrantes .sectionIntegrantes__integrantes .sectionIntegrantes__integrantes__card .sectionIntegrantes__integrantes__card__nombre:hover {
+  color: #909090;
+}
+
+/*section mapas*/
+.colorFondoMapas {
+  background-color: black;
+  padding-top: 30vh;
+  padding-bottom: 10vh;
+}
+
+/*mapas*/
+.divMapas { /*div que contiene un titulo un parrrafo y un mapa*/
+  margin-top: 0vh;
+  margin-bottom: 10vh;
+  display: flex;
+  flex-direction: column;
+  height: 50vh;
+  border-bottom: 2.5px solid #252525;
+}
+.divMapas .divMapas__titulo {
+  height: 10%;
+  display: flex;
+}
+.divMapas .divMapas__cajamapa {
+  margin-top: 1vh;
+  margin-bottom: 1.5vh;
+  height: 70%;
+  width: 100%;
+}
+.divMapas .divMapas__cajamapa .divMapas__cajamapa__mapa {
+  height: 100%;
+  width: 100%;
+}
+.divMapas .divMapas__texto {
+  height: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+/* termina estilado del BODY index*/
+/* Comienza el estilado de page CONTACTO*/
+.bodyContacto {
+  background-color: #252525;
+}
+
+.divContactoH1 { /* div que contiene el h1 y el parrafo de comienzo de pag*/
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+}
+
+.divContacto { /*div que contiene la imagen y el formulario de contacto*/
+  margin-top: 0;
+  margin-bottom: 20vh;
+  height: 100%;
+}
+
+.divImagenContacto { /*div que contiene la imagen de contacto*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  background-image: url(../assets/img/contacto5.png);
+  background-repeat: no-repeat;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.divFormularioContacto { /*div que contiene el formulario de contacto*/
+  padding: 27px;
+}
+
+.form-control {
+  color: white;
+  background-color: #252525;
+  border: 1.5px solid #909090;
+}
+
+.form-control:focus {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.363);
+  border-color: #DA0D00;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba(0, 0, 0, 0.137);
+}
+
+.btn-primary {
+  width: 100%;
+  background-color: #252525;
+  border-color: #DA0D00;
+  border-width: 2px;
+  border-style: ridge;
+}
+
+.btn-primary:hover {
+  color: #DA0D00;
+  background-color: black;
+  border-color: #DA0D00;
+  border-style: inset;
+}
+
+/* termina el estilado de page CONTACTO*/
+/* Comienza el estilado de page DISCOS*/
+/* BODY DE DISCOS con bootstrap*/
+.colorBody {
+  background-color: #252525;
+}
+
+.mainDiscos {
+  margin-top: 0;
+  margin-bottom: 20vh;
+}
+
+.divDiscosH1 { /* div que contiene el h1 y el parrafo de comienzo de pag*/
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+}
+
+.divUnDisco { /*div que contiene la imagen de la tapa del disco, el titulo y la lista de temas*/
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+  border-bottom: 2.5px solid black;
+}
+.divUnDisco .divUnDisco__divtapa { /*div que contiene la imagen de la tapa del disco*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+.divUnDisco .divUnDisco__divtapa .divUnDisco__divtapa__img { /*imagen de la tapa*/
+  height: 98%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.divUnDisco .divUnDisco__textos { /*div que contiene nombre del dico año y lista de temas*/
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 80vh;
+}
+.divUnDisco .divUnDisco__textos .divUnDisco__textos__titulo { /* div que contiene nombre del dico y año */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 20%;
+  padding-left: 1.9rem;
+}
+.divUnDisco .divUnDisco__textos .divUnDisco__textos__lista { /* div que contiene lista de temas*/
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 70%;
+  margin-top: 5vh;
+}
+.divUnDisco .divUnDisco__textos .divUnDisco__textos__lista .a {
+  color: white;
+  text-decoration: none;
+}
+.divUnDisco .divUnDisco__textos .divUnDisco__textos__lista .a:hover {
+  color: #DA0D00;
+}
+
+/* estilado de la lista de temas*/
+/* Comienza el estilado de page FOTOS*/
+/* BODY DE FOTOS*/
+.colorBodyFotos {
+  background-color: #252525;
+}
+
+.mainFotos {
+  margin-top: 0;
+  margin-bottom: 20vh;
+}
+
+.tituloFotos {
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+}
+
+.galeria { /*FALTA APLICAR MEDIAquery a la galeria*/
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 250px;
+  grid-template-areas: "img1 img2 img2" "img1 img2 img2" "img3 img3 img3" "img3 img3 img3" "img4 img5 img6" "img7 img7 img8" "img7 img7 img8" "img9 img9 img10" "img9 img9 img11" "img12 img12 img12" "img12 img12 img12" "img12 img12 img12" "img13 img15 img15" "img14 img15 img15" "img16 img16 img17" "img16 img16 img18";
+}
+.galeria .galeria__div {
+  position: relative;
+  margin: 2px;
+}
+.galeria .galeria__div .galeria__div__img {
+  width: 100%;
+  height: 100%;
+  /*esta propiedad sirve para que la imagen no se distorcione con respecto a su ancho*/
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.galeria__div__1 {
+  grid-area: img1;
+}
+
+.galeria__div__2 {
+  grid-area: img2;
+}
+
+.galeria__div__3 {
+  grid-area: img3;
+}
+
+.galeria__div__4 {
+  grid-area: img4;
+}
+
+.galeria__div__5 {
+  grid-area: img5;
+}
+
+.galeria__div__6 {
+  grid-area: img6;
+}
+
+.galeria__div__7 {
+  grid-area: img7;
+}
+
+.galeria__div__8 {
+  grid-area: img8;
+}
+
+.galeria__div__9 {
+  grid-area: img9;
+}
+
+.galeria__div__10 {
+  grid-area: img10;
+}
+
+.galeria__div__11 {
+  grid-area: img11;
+}
+
+.galeria__div__12 {
+  grid-area: img12;
+}
+
+.galeria__div__13 {
+  grid-area: img13;
+}
+
+.galeria__div__14 {
+  grid-area: img14;
+}
+
+.galeria__div__15 {
+  grid-area: img15;
+}
+
+.galeria__div__16 {
+  grid-area: img16;
+}
+
+.galeria__div__17 {
+  grid-area: img17;
+}
+
+.galeria__div__18 {
+  grid-area: img18;
+}
+
+.colorbodyletras {
+  background-color: #252525;
+}
+
+.divH1Letras { /*div que contiene el h1 y el parrafo de comienzo de pag*/
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+}
+
+.divDisco { /*div que contiene el nombre, lista de temas y letras de un disco*/
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+  height: auto;
+  padding: 0.4rem 0.8rem;
+  background-color: #252525;
+  border: 1px solid #DA0D00;
+}
+
+.divLetras__Titulo {
+  margin-top: 1.5vh;
+  margin-bottom: 1.5vh;
+}
+
+.divLetras__ListaDeTemas { /*div que contiene la lista de temas de un disco*/
+  height: auto;
+}
+
+.list-group-item {
+  padding: 0.4rem 0.8rem;
+  background-color: #252525;
+  border: 1px solid #DA0D00;
+}
+
+.list-group-item-action {
+  width: 100%;
+  color: white;
+  text-align: inherit;
+}
+
+.list-group-item-action:hover, .list-group-item-action:focus {
+  color: white;
+  text-decoration: none;
+  background-color: black;
+}
+
+.list-group-item-action:active {
+  color: #212529;
+  background-color: #e9ecef;
+}
+
+.divLetras { /*div que contiene las letras de un disco*/
+  background-color: rgba(0, 0, 0, 0.363);
+  color: white;
+  height: 79vh;
+  overflow: auto;
+  padding-top: 2vh;
+}
+
+/*ESTILADO PAGE VIDEOS*/
+.colorBodyVideos {
+  background-color: #252525;
+}
+
+.mainVideos {
+  margin-top: 0;
+  margin-bottom: 20vh;
+}
+
+.divVideosH1 { /*div que contiene el h1 y el parrafo de comienzo de pag*/
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+}
+
+.divVideo {
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+}
+.divVideo .divVideo__video {
+  width: 100%;
+  height: 75vh;
+  border-color: black;
+  border-width: 3px;
+  border-style: dotted;
+}/*# sourceMappingURL=estilod.css.map */

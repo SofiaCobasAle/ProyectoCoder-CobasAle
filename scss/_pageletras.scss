@@ -1,0 +1,50 @@
+.colorbodyletras{
+    background-color: $color-gris;
+}
+
+.divH1Letras{/*div que contiene el h1 y el parrafo de comienzo de pag*/
+    @include margin-tb(10vh, 10vh);
+}
+.divDisco{ /*div que contiene el nombre, lista de temas y letras de un disco*/
+    @include margin-tb(10vh, 10vh);
+    height: auto; 
+    padding: 0.4rem 0.8rem;
+    background-color:$color-gris;
+    border: 1px solid $color-rojo;
+}
+.divLetras__Titulo{
+    @include margin-tb(1.5vh, 1.5vh);
+
+}
+.divLetras__ListaDeTemas{ /*div que contiene la lista de temas de un disco*/
+    height: auto;
+}
+
+.list-group-item {
+    padding: 0.4rem 0.8rem;
+    background-color:$color-gris;
+    border: 1px solid $color-rojo;
+}
+.list-group-item-action {
+    width: 100%;
+    color:$color-blanco;
+    text-align: inherit;
+}
+.list-group-item-action:hover, .list-group-item-action:focus {
+    color: $color-blanco;
+    text-decoration: none;
+    background-color:$color-negro;
+}
+.list-group-item-action:active {
+    color: #212529;
+    background-color: #e9ecef;
+}
+.divLetras{ /*div que contiene las letras de un disco*/
+    background-color:rgba(0, 0, 0, 0.363);
+    color: $color-blanco;
+    height: 79vh;
+    overflow: auto;
+    padding-top: 2vh;
+}
+
+

@@ -1,0 +1,91 @@
+
+/*tipografia*/
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,300;0,400;0,700;1,100&display=swap');
+
+/*estilos generales de texto*/
+/*txt*/
+
+$map-font-weight:(
+    font-thin: 200,
+    font-light: 300,
+    font-regular: 400,
+    font-bold: 600,
+    font-block: 800,
+);
+
+.h1{
+    color:$color-blanco;
+    font-weight:map-get($map-font-weight, font-bold);
+}
+.h2{
+    color:$color-blanco;    
+}
+.h3{
+    color: $color-rojo;
+    font-weight:map-get($map-font-weight, font-bold);
+    text-align: center;
+}
+.h3b{
+    color:$color-blanco;
+    font-weight:map-get($map-font-weight, font-bold);
+}
+.h4{
+    color:$color-blanco;
+    font-weight:map-get($map-font-weight, font-bold);
+}
+.h5{
+    color: $color-rojo;
+}
+.h5b{
+    color:$color-blanco;
+    font-weight:map-get($map-font-weight, font-bold);
+}
+.h6{
+    color:$color-blanco;
+}
+.parrafos{
+    color:$color-blanco;
+    font-weight:map-get($map-font-weight, font-light);
+    font-size: 1.1rem;
+    text-align: justify;
+}
+.parrafos2{/* parrafo sin justificar */
+    color:$color-blanco;
+}
+.parrafos3{
+    color:$color-rojo;
+    font-weight:map-get($map-font-weight, font-regular);
+    font-size: 0.80rem;
+    line-height: 1;
+    text-align: right;
+}
+.parrafos4{
+    @extend .parrafos3;
+    color:$color-negro;
+    line-height: 1.5;
+}
+.parrafos5{
+    @extend .parrafos3;
+    color:$color-negro;
+    text-align: center;   
+}
+.parrafos6{/* parrafo sin justificar */
+    color:$color-rojo;
+}
+.txtForm{/* texto formulario */
+    color:$color-blanco;
+    font-weight:map-get($map-font-weight, font-regular);
+    font-size: 1rem;
+    line-height: 1;
+}
+.italica{
+    color:$color-rojo;
+    font-weight:map-get($map-font-weight, font-bold);
+    font-size: 1.1rem;
+    text-align: justify;
+}
+/* listas de temas en discos */
+li { 
+    list-style:none; 
+}
+

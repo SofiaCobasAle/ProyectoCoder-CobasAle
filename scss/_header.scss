@@ -1,0 +1,39 @@
+/* comienza estilado del header */
+
+/* ESTILADOS DE HEADER con BOOTSTRAP */
+.Header{
+    position: sticky ;   
+    top:0;
+    z-index:10;
+}
+.navbar-bgcolor{
+    background-color: $color-negro;
+    box-shadow: 0px 2px 24px 3px rgb(0, 0, 0); 
+}
+/*logo header - faltaria  modificar icono menu h.porque no se ve con el bg negro*/
+.logo{
+    height: 5rem;
+}
+@media(max-width: 740px){
+    .logo{
+        height: 3.5rem;
+    }
+}
+.nav-link-margin{
+    margin: 0.7rem;
+}
+.nav-link{ 
+    color:$color-grisclaro;
+    font-family:'IBM Plex Sans', sans-serif;
+    font-weight:map-get($map-font-weight, font-regular);
+}
+.nav-link2 {
+    color: $color-rojo;
+    font-family:'IBM Plex Sans', sans-serif;
+    display: block;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    font-weight:map-get($map-font-weight, font-bold);
+}
+
+/* termina estilado del header */

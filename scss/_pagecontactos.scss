@@ -1,0 +1,50 @@
+/* Comienza el estilado de page CONTACTO*/
+
+.bodyContacto{
+    background-color: $color-gris;
+}
+.divContactoH1{ /* div que contiene el h1 y el parrafo de comienzo de pag*/
+    @include margin-tb(10vh, 10vh);
+}
+.divContacto{ /*div que contiene la imagen y el formulario de contacto*/
+    @include margin-tb(0, 20vh);
+    height: 100%;
+}
+.divImagenContacto{ /*div que contiene la imagen de contacto*/
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    height: 80vh;
+    background-image: url(../assets/img/contacto5.png);
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+.divFormularioContacto{ /*div que contiene el formulario de contacto*/
+    padding: 27px;
+}
+.form-control {
+    color:$color-blanco;
+    background-color:$color-gris;
+    border: 1.5px solid $color-grisclaro;
+}
+.form-control:focus {
+    color:$color-blanco;
+    background-color:rgba(0, 0, 0, 0.363);
+    border-color: $color-rojo;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(0, 0, 0, 0.137);
+}
+.btn-primary {
+    width: 100%;
+    background-color:$color-gris;
+    border-color:$color-rojo;
+    border-width: 2px;
+    border-style: ridge;
+}
+.btn-primary:hover {
+    color:$color-rojo;
+    background-color:$color-negro;
+    border-color:$color-rojo;
+    border-style: inset;
+}
+/* termina el estilado de page CONTACTO*/
