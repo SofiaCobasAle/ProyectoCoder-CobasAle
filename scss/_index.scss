@@ -12,7 +12,9 @@
     }
 } 
 .divSumoH1{ /*div que contiene el h1 del index y el primer parrafo de la pagina*/
-    @include margin-tb(15vh, 30vh);
+    margin-top: 15vh;
+    padding-bottom: 30vh;
+    background-color: $color-negro;
 }
 
 /*section integrantes*/
@@ -34,6 +36,9 @@
             .sectionIntegrantes__integrantes__card__foto{
                 width: 175px;
                 display: inline;
+                &:hover{
+                    filter: invert(100%);
+                }
             }
             .sectionIntegrantes__integrantes__card__nombre{
                 text-decoration: none;

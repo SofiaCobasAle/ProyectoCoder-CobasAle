@@ -4,18 +4,21 @@
 .footer{ 
     background-color:$color-negro;
     @include flexible (column, center);
-    padding-top: 20vh;
+    padding-top: 25vh;
     padding-bottom: 5vh;
     .footer__contenedorImagenFinal{/*imagen final (cara luca)*/
-        @include margin-tb(0vh, 15vh);
+        @include margin-tb(0vh, 8vh);
         display: flex;
         justify-content:center;
         align-items: center;
-        height: 30vh;
+        height: 25vh; 
+        }
         .footer__contenedorImagenFinal__imagen{
             height: 100%;
-        
-        }
+            &:hover{
+                animation: rotacion_footer 0.7s linear 1;
+            }  
+        }  
     }
     .footer__divSpotify{ /*div que contiene el link a spotify del footer*/
         padding: 5vh;
@@ -30,5 +33,13 @@
         font-size: 12px;
         text-align: center;
     }
-}
 
+
+    @keyframes rotacion_footer {
+        from {
+        transform: rotate(0deg);
+        }
+        to {
+        transform: rotate(360deg);
+        }
+    }

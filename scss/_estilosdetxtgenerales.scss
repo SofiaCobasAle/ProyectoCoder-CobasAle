@@ -55,7 +55,7 @@ $map-font-weight:(
 .parrafos3{
     color:$color-rojo;
     font-weight:map-get($map-font-weight, font-regular);
-    font-size: 0.80rem;
+    font-size: 0.90rem;
     line-height: 1;
     text-align: right;
 }
@@ -66,6 +66,7 @@ $map-font-weight:(
 }
 .parrafos5{
     @extend .parrafos3;
+    font-size: 1rem;
     color:$color-negro;
     text-align: center;   
 }

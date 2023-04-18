@@ -64,7 +64,7 @@
 .parrafos3, .parrafos5, .parrafos4 {
   color: #DA0D00;
   font-weight: 400;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   line-height: 1;
   text-align: right;
 }
@@ -75,6 +75,7 @@
 }
 
 .parrafos5 {
+  font-size: 1rem;
   color: black;
   text-align: center;
 }
@@ -144,6 +145,10 @@ li {
   font-weight: 600;
 }
 
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
 /* termina estilado del header */
 /* comienza estilado del footer/
 /* estilados del footer*/
@@ -152,34 +157,47 @@ li {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-top: 20vh;
+  padding-top: 25vh;
   padding-bottom: 5vh;
 }
 .footer .footer__contenedorImagenFinal { /*imagen final (cara luca)*/
   margin-top: 0vh;
-  margin-bottom: 15vh;
+  margin-bottom: 8vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 30vh;
+  height: 25vh;
 }
-.footer .footer__contenedorImagenFinal .footer__contenedorImagenFinal__imagen {
+.footer .footer__contenedorImagenFinal__imagen {
   height: 100%;
 }
-.footer .footer__divSpotify { /*div que contiene el link a spotify del footer*/
+.footer .footer__contenedorImagenFinal__imagen:hover {
+  animation: rotacion_footer 0.7s linear 1;
+}
+
+.footer__divSpotify { /*div que contiene el link a spotify del footer*/
   padding: 5vh;
   text-align: center;
 }
-.footer .footer__divSpotify .footer__divSpotify__link { /*link spotify*/
+.footer__divSpotify .footer__divSpotify__link { /*link spotify*/
   text-decoration: none;
   color: rgb(37, 197, 90);
 }
-.footer .footer__texto { /*div que contiene el texto del footer*/
+
+.footer__texto { /*div que contiene el texto del footer*/
   color: white;
   font-size: 12px;
   text-align: center;
 }
 
+@keyframes rotacion_footer {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 /*estilados MAIN DEL INDEX*/
 .colorFondoH1 {
   background-color: black;
@@ -195,7 +213,8 @@ li {
 
 .divSumoH1 { /*div que contiene el h1 del index y el primer parrafo de la pagina*/
   margin-top: 15vh;
-  margin-bottom: 30vh;
+  padding-bottom: 30vh;
+  background-color: black;
 }
 
 /*section integrantes*/
@@ -221,6 +240,9 @@ li {
 .sectionIntegrantes .sectionIntegrantes__integrantes .sectionIntegrantes__integrantes__card .sectionIntegrantes__integrantes__card__foto {
   width: 175px;
   display: inline;
+}
+.sectionIntegrantes .sectionIntegrantes__integrantes .sectionIntegrantes__integrantes__card .sectionIntegrantes__integrantes__card__foto:hover {
+  filter: invert(100%);
 }
 .sectionIntegrantes .sectionIntegrantes__integrantes .sectionIntegrantes__integrantes__card .sectionIntegrantes__integrantes__card__nombre {
   text-decoration: none;
@@ -288,7 +310,7 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80vh;
+  height: 75vh;
   background-image: url(../assets/img/contacto5.png);
   background-repeat: no-repeat;
   -o-object-fit: cover;
@@ -313,15 +335,18 @@ li {
   box-shadow: 0 0 0 0.25rem rgba(0, 0, 0, 0.137);
 }
 
-.btn-primary {
-  width: 100%;
+.formulario__btn {
+  display: flex;
+}
+.formulario__btn .formulario__btn__primary {
+  width: 50%;
+  color: white;
   background-color: #252525;
   border-color: #DA0D00;
   border-width: 2px;
   border-style: ridge;
 }
-
-.btn-primary:hover {
+.formulario__btn .formulario__btn__primary:hover {
   color: #DA0D00;
   background-color: black;
   border-color: #DA0D00;
@@ -360,6 +385,11 @@ li {
   height: 98%;
   -o-object-fit: cover;
      object-fit: cover;
+  opacity: 80%;
+}
+.divUnDisco .divUnDisco__divtapa .divUnDisco__divtapa__img:hover {
+  opacity: 100%;
+  transition: opacity 0.3s ease-in-out;
 }
 .divUnDisco .divUnDisco__textos { /*div que contiene nombre del dico año y lista de temas*/
   display: inline-flex;
@@ -406,7 +436,7 @@ li {
   margin-bottom: 10vh;
 }
 
-.galeria { /*FALTA APLICAR MEDIAquery a la galeria*/
+.galeria {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: 250px;
@@ -496,6 +526,16 @@ li {
   grid-area: img18;
 }
 
+@media (max-width: 740px) { /*mediaqueris galeria*/
+  .galeria {
+    display: grid;
+    grid-template-columns: repeat(1);
+    grid-auto-rows: 150px;
+  }
+  .galeria .galeria__div {
+    margin: 1px;
+  }
+}
 .colorbodyletras {
   background-color: #252525;
 }
@@ -579,4 +619,50 @@ li {
   border-color: black;
   border-width: 3px;
   border-style: dotted;
+}
+
+.body404 {
+  background-color: black;
+}
+
+.div404 {
+  height: 84vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.div404 .div404__imagen {
+  width: 34%;
+}
+.div404 .div404__imagen:hover {
+  animation: movimiento_404 1.5s ease-in-out infinite;
+}
+
+@media (max-width: 920px) {
+  .div404 {
+    height: 90vh;
+  }
+  .div404__imagen {
+    width: 70%;
+  }
+}
+@media (max-width: 740px) {
+  .div404 {
+    height: 60vh;
+  }
+  .div404__imagen {
+    width: 70%;
+  }
+}
+@keyframes movimiento_404 {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
 }/*# sourceMappingURL=estilod.css.map */

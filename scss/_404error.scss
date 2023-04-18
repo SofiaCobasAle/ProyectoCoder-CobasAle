@@ -1,0 +1,47 @@
+.body404{
+    background-color: $color-negro;
+}
+.div404{
+    height: 84vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    .div404__imagen{
+        width: 34%;
+        &:hover{
+            animation: movimiento_404 1.5s ease-in-out infinite;
+        }  
+    }
+}
+
+
+@media(max-width: 920px){
+    .div404{
+        height: 90vh;
+    }
+    .div404__imagen{
+        width: 70%;
+    }
+}
+@media(max-width: 740px){
+    .div404{
+        height: 60vh;
+    }
+    .div404__imagen{
+        width: 70%;
+    }
+}
+
+
+@keyframes movimiento_404 {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.3;
+    }
+    100% {
+        opacity: 1;
+    }
+}

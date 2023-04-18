@@ -21,6 +21,11 @@
         .divUnDisco__divtapa__img{/*imagen de la tapa*/
             height: 98%;
             object-fit: cover;
+            opacity: 80%;
+            &:hover{
+                opacity: 100%;
+                transition: opacity 0.3s ease-in-out;   
+            }
         }
     }
     .divUnDisco__textos{ /*div que contiene nombre del dico año y lista de temas*/

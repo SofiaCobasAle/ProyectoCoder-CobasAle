@@ -14,7 +14,7 @@
     display: flex;
     justify-content:center;
     align-items: center;
-    height: 80vh;
+    height: 75vh;
     background-image: url(../assets/img/contacto5.png);
     background-repeat: no-repeat;
     object-fit: cover;
@@ -34,17 +34,22 @@
     outline: 0;
     box-shadow: 0 0 0 0.25rem rgba(0, 0, 0, 0.137);
 }
-.btn-primary {
-    width: 100%;
-    background-color:$color-gris;
-    border-color:$color-rojo;
-    border-width: 2px;
-    border-style: ridge;
+.formulario__btn{
+    display: flex;
+    .formulario__btn__primary {
+        width: 50%;
+        color: $color-blanco;
+        background-color:$color-gris;
+        border-color:$color-rojo;
+        border-width: 2px;
+        border-style: ridge;
+        &:hover{
+            color:$color-rojo;
+            background-color:$color-negro;
+            border-color:$color-rojo;
+            border-style: inset;
+        }
+    }
 }
-.btn-primary:hover {
-    color:$color-rojo;
-    background-color:$color-negro;
-    border-color:$color-rojo;
-    border-style: inset;
-}
+
 /* termina el estilado de page CONTACTO*/
